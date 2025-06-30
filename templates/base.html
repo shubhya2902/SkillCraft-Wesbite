@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="SkillCraft Solutions is your one-stop destination for your Final Year Engineering Projects, Final Year IT Projects, MCA Final Year Projects, BCA Project Solutions, Ph.D. Research Support, Thesis Writing Services, IEEE Base Paper Projects, Academic Project Assistance, Live Project Demo, Project with Source Code, Code Explanation, College Project Help, Final Year Project Documentation, Research Paper Help, Thesis Formatting, Python Projects, Django Projects, Flask Web Projects, HTML CSS JavaScript Projects, Machine Learning Projects, Deep Learning Projects, IoT Academic Projects, WSN Final Year Projects, MATLAB Projects, Cloud Computing Projects, Big Data Projects, Android Projects, Ph.D. Dissertation Help, Research Topic Selection, Synopsis Writing, Stage 1 Report, Stage 2 Report, Plagiarism-Free Thesis, Personal Project Guidance, Online Project Support, Project Modification, Coding Help, AnyDesk Project Support, Custom Academic Solutions, Paper Publication Help, College Project Consultancy, Final Year Projects in India, Ph.D. Thesis Support in India">
+    <meta name="author" content="SkillCraft Solutions">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>SkillCraft Solutions</title>
+    <link rel="icon" href="/static/assets/images/skillcraft.jpg" type="image/png">
+
+    <!-- Bootstrap core CSS -->
+    <link href="/static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Flash Message CSS -->
+    <link rel="stylesheet" href="/static/assets/css/flash_message.css">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="/static/assets/css/fontawesome.css">
+    <link rel="stylesheet" href="/static/assets/css/templatemo-digimedia-v3.css">
+    <link rel="stylesheet" href="/static/assets/css/animated.css">
+    <link rel="stylesheet" href="/static/assets/css/owl.css">
+<!--
+
+TemplateMo 568 DigiMedia
+
+https://templatemo.com/tm-568-digimedia
+
+-->
+  </head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- Pre-header Starts -->
+  <div class="pre-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-sm-8 col-7">
+          <ul class="info">
+            <li><a href="mailto:skillcrafttsolutions@gmail.com"><i class="fa fa-envelope"></i>skillcrafttsolutions@gmail.com</a></li>
+            <li><a href=""><i class="fa fa-phone"></i></a><a href="tel:9158698218">9158698218 </a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-sm-4 col-5">
+          <ul class="social-media">
+            <li><a href="https://www.linkedin.com/company/skillcraftsolutions" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="https://wa.me/919158698218?text=Hello%20SkillCraft%20Solutions%2C%20I%20want%20to%20get%20an%20inquiry%20about%20a%20final%20year%20engineering%20project." target="_blank"><i class="fa fa-whatsapp"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Pre-header End -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+            <a href="/" class="logo">
+              <img src="/static/assets/images/skill_bg.png" alt="" height="120" width="153">
+            </a>
+            <!-- ***** Logo End ***** -->
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+              <li class="scroll-to-section"><a href="/">Home</a></li>
+              <li class="scroll-to-section"><a href="/about">About</a></li>
+              <li class="scroll-to-section"><a href="/services">Services</a></li>
+              <li class="scroll-to-section"><a href="/technologies">Technologies</a></li>
+              <li class="scroll-to-section"><a href="/Thesis_Research">Thesis & Research</a></li>
+              <li class="scroll-to-section"><a href="/contact">Contact</a></li>
+              <li class="scroll-to-section"><div class="border-first-button"><a href="/#free-quote">Inquire Now</a></div></li>
+            </ul>
+            <a class='menu-trigger'>
+                <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+{% with messages = get_flashed_messages(with_categories=true) %}
+  {% if messages %}
+    {% for category, message in messages %}
+      <div class="flash-popup {{ category }}">
+        <span class="popup-close" onclick="this.parentElement.style.display='none';">&times;</span>
+        {{ message }}
+      </div>
+      <script>
+        // Auto-hide popup after 4 seconds
+        setTimeout(() => {
+          document.querySelector('.flash-popup').style.display = 'none';
+        }, 4000);
+      </script>
+    {% endfor %}
+  {% endif %}
+{% endwith %}
+
+{% block body %}
+
+{% endblock %}
+
+
+
+
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <p>Copyright © 2025 SkillCraft Solutions. All Rights Reserved.
+          <br>Template By: TemplateMo</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Scripts -->
+  <script src="/static/vendor/jquery/jquery.min.js"></script>
+  <script src="/static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/static/assets/js/owl-carousel.js"></script>
+  <script src="/static/assets/js/animation.js"></script>
+  <script src="/static/assets/js/imagesloaded.js"></script>
+  <script src="/static/assets/js/custom.js"></script>
+
+</body>
+</html>
