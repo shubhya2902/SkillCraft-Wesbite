@@ -133,7 +133,7 @@ def send_thank_you_email(user_email, user_name):
         server = smtplib.SMTP(SMTP_SERVER, SMTP_PORT)
         server.starttls()
         server.login(sender_email_to_user, sender_password_to_user)
-        server.sendmail(SENDER_EMAIL, user_email, msg.as_string())
+        server.sendmail(sender_email_to_user, user_email, msg.as_string())
         server.quit()
     except Exception as e:
         print(f"❌ Failed to send thank-you email: {e}")
