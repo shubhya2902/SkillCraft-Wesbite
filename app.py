@@ -3,7 +3,7 @@ from flask_sqlalchemy import SQLAlchemy
 import os
 
 app = Flask(__name__)
-app.secret_key = 'your_secret_key'
+app.secret_key = 'SkillCraft@2025'
 
 # Config SQLite DB in same folder
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///skillcraft.db'
@@ -23,7 +23,7 @@ SMTP_PORT = 587
 # to our email
 SENDER_EMAIL = os.environ.get('SENDER_EMAIL')
 SENDER_PASSWORD = os.environ.get('SENDER_PASSWORD')
-RECEIVER_EMAILS = os.environ.get('skillcrafttsolutions@gmail.com')
+RECEIVER_EMAILS = os.environ.get('RECEIVER_EMAILS')
 
 # to user
 sender_email_to_user = os.environ.get('SENDER_EMAIL_TO_USER')
